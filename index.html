@@ -10,15 +10,36 @@
 <body >
     <style>
         body {
+            background: #050b0e;
+            overflow: hidden;
+            padding: 0;
+            margin: 0;
+        }
+
+        .star {
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            background: #f7f3f6;
+            animation: twinkle 3s infinite;
+        }
+
+        @keyframes twinkle {
+            0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+    </style>
+    <style>
+        body {
             margin: 0;
             height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(240deg,pink, #eaf340,blue);
-            background-size: 200% 200%;
-            animation: gradient 5s ease infinite;
-            
+            background: linear-gradient(20deg, #eaf340,blue);
+            background-size: 500% 500%;
+            animation: gradient 15s ease infinite;
         }
 
         @keyframes gradient {
@@ -32,8 +53,18 @@
                 background-position: 0% 50%;
             }
         }
-        
     </style>
+</head>
+<body>
+    <script>
+        for (let i = 0; i < 500; i++) {
+            let star = document.createElement('div');
+            star.className = 'star';
+            star.style.top = Math.random() * window.innerHeight + 'px';
+            star.style.left = Math.random() * window.innerWidth + 'px';
+            document.body.appendChild(star);
+        }
+    </script>
     <nav >
         <div class="main-nav container flex">
            <a href="#" class="company-logo">
@@ -53,12 +84,42 @@
         </div>
     </nav>
    
-    <button class="conveyancing">
+   <!-- <button class="conveyancing">
         <h1>CONVEYANCING</h1>
         <p><b> is the act of transferring property from one party to another. The term is commonly used in real estate transactions when buyers and sellers transfer ownership of land, building, or home. A conveyance is done using an instrument of conveyance—a legal document such as a contract, lease, title, or deed.</b></p>
-    </button>
+    </button>-->
 
-    <main></main>
+    <main>
+       <!-- <div class="cards-container container flex" >
+           
+            <div class="card">
+                 <div class="card-header">
+                    <img src="https://via.placeholder.com/400*200" alt="no image">
+                 </div>
+                 <div class="card-content">
+                    <h3>This is title</h3>
+                    <h6>End gadget23215255</h6>
+                    <p class="Parties">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, placeat laudantium autem illo saepe fugit excepturi unde dolorem aperiam inventore consequuntur earum, adipisci vitae nihil sunt velit facilis. Eos, aperiam?</p>
+                 </div>
+            </div>
+                
+        </div>-->
+        
+           <p> 
+            <div class="card1">
+                <h1>CONVEYANCING</h1>
+        <p><b> is the act of transferring property from one party to another. The term is commonly used in real estate transactions when buyers and sellers transfer ownership of land, building, or home. A conveyance is done using an instrument of conveyance—a legal document such as a contract, lease, title, or deed.</b></p>
+            </div></p>
+           <br>
+           <p>
+        <div class="slider">
+            <div class="card">Card 2</div>
+            <div class="card">Card 3</div>
+            <div class="card">Card 4</div>
+            <div class="card">Card 5</div>
+        </p>
+        </div>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
