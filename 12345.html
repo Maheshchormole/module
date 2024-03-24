@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sky View</title>
+    <style>
+        body {
+            background: #6dc1f2;
+            overflow: hidden;
+            padding: 0;
+            margin: 0;
+        }
+
+        .star {
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            background: #fff;
+            animation: twinkle 3s infinite;
+        }
+
+        @keyframes twinkle {
+            0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+    </style>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(20deg, #eaf340,blue);
+            background-size: 200% 200%;
+            animation: gradient 15s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <script>
+        for (let i = 0; i < 100; i++) {
+            let star = document.createElement('div');
+            star.className = 'star';
+            star.style.top = Math.random() * window.innerHeight + 'px';
+            star.style.left = Math.random() * window.innerWidth + 'px';
+            document.body.appendChild(star);
+        }
+    </script>
+    <div  class="card1">
+        <Style>
+            .card1{
+    width: 850px;
+    height: 200px;
+   position: relative;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    background: linear-gradient(240deg,rgba(255, 192, 203, 0.177), #eaf34070,rgba(0, 0, 255, 0.067));
+    border-radius: 20px;
+    line-height: 20px;
+    padding: 50px;
+    border-block-color:green,white,grey;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: -150px;
+}
+        </Style>
+        <P>"The seller is the person or entity that is selling the property. They will also instruct a solicitor to handle the conveyancing process. The seller will need to provide details of the property, such as the title deeds and any legal issues that may affect the property"</P>
+    </div>
+    <div>
+        <table>
+            
+        </table>
+    </div>
+</body>
+</html>
