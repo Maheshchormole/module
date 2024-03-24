@@ -107,3 +107,32 @@ font-style: italic;
 height: 250px;
 width: 1000px;
 }
+.slider {
+    display: flex;
+    overflow-x: auto;
+}
+.card {
+    text-align: 100px;
+    flex: 0 0 auto;
+    margin-right: 1em;
+    width: 200px;
+    height: 200px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    line-height: 200px;
+}
+.card1{
+    width: 850px;
+    height: 200px;
+    margin-top: -50px;
+    margin-left: 0px;
+    margin-right: 50px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-justify: distribute;
+    text-size-adjust: 50px;
+    
+
+}
