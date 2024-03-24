@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+:root{
+     --primary-text-color: #183b56;
+     --secondory-text-color:#577592;
+     --accent-color-dark:#1d69a3;
+     --padding-inline-section:20px;
+}
+.body {
+    font-family: "poppins",sans-serif;
+    background-color: darkturquoise;
+}
+
+.p{
+    font-family: "Roboto",sans-serif;
+    color: var(--secondory-text-color);
+    line-height: 1.4rem;
+}
+.a{
+    text-decoration: none;
+}
+.ul{
+    list-style: none;
+}
+.flex{
+    display:flex ;
+    align-items:center ;
+    }
+.container{
+    max-width: 2300px;
+    margin-inline: auto;
+    overflow: hidden;
+
+}
+nav{
+    background: linear-gradient(240deg,pink, #eaf340,blue);
+    box-shadow: 0 0 4px #bbd0e2;
+    position: fixed;
+    top:0;
+    z-index: 99;
+    left: 0;
+    right: 0;
+}
+.main-nav{
+      justify-content: space-around;
+    padding-block: 0px;
+    background: linear-gradient(-240deg,pink, #eaf340,blue);
+    animation: gradient 5s ease infinite;
+    height: 100px;
+}
+.company-logo img{
+    width: 200px;
+    border-radius: 200px;
+    right: 0px;
+}
+.nav-links ul{
+    gap: 60px;
+}
+
+.hover-link{
+    cursor: pointer;
+    font-style: italic;
+    font-size: 50px;
+    
+}
+
+.hover-link:hover{
+    color: var(--secondory-text-color);
+}
+.hover-link:active{
+    color: red;
+}
+.search-bar{
+    height: 100px;
+    gap: 10px;
+    font-family: "Roboto",sans-serif;
+}
+.news-input{
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    font-family: "Roboto",sans-serif;
+}
+.search-button{
+    height: 50px;
+    width: 60px;
+    background-color:yellow;
+    color:blue;
+    font-family: "Roboto",sans-serif;
+    border-radius: 5px;
+
+}
+.conveyancing
+{
+align-items: var(10,20,30);
+border-radius: 20px;
+font-size: 20px;
+font-style: italic;
+height: 250px;
+width: 1000px;
+}
