@@ -4,6 +4,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    align-items: center;
+
 
 }
 
@@ -42,7 +44,7 @@
 
 }
 nav{
-    background: linear-gradient(240deg,pink, #eaf340,blue);
+    background: linear-gradient(240deg,rgba(255, 192, 203, 0.177), #eaf34070,rgba(0, 0, 255, 0.067));
     box-shadow: 0 0 4px #bbd0e2;
     position: fixed;
     top:0;
@@ -54,9 +56,10 @@ nav{
       justify-content: space-around;
     padding-block: 0px;
     background: linear-gradient(-240deg,pink, #eaf340,blue);
-    animation: gradient 5s ease infinite;
+    animation: gradient 2ms ease infinite;
     height: 100px;
     max-width: max-content;
+    background: linear-gradient(240deg,rgba(255, 192, 203, 0.177), #eaf34070,rgba(0, 0, 255, 0.067));
 }
 .company-logo img{
     width: 200px;
@@ -82,7 +85,7 @@ nav{
 }
 .search-bar{
     height: 100px;
-    gap: 10px;
+    gap: 50px;
     font-family: "Roboto",sans-serif;
 }
 .news-input{
@@ -97,7 +100,7 @@ nav{
     background-color:yellow;
     color:blue;
     font-family: "Roboto",sans-serif;
-    border-radius: 5px;
+    border-radius: 10px;
 
 }
 .conveyancing
@@ -119,23 +122,46 @@ width: 1000px;
     margin-right: 1em;
     width: 200px;
     height: 200px;
-    background-color: #4CAF50;
+    background-color: #ceab11;
     color: white;
     text-align: center;
     line-height: 200px;
+    border-top-right-radius: 60px;
+    border-end-start-radius: 60px;
+    font-size: 40px;
+    font-display: var(--primary-text-color);
+    background: linear-gradient(240deg,rgba(255, 192, 203, 0.177), #eaf34070,rgba(0, 0, 255, 0.067));
 }
 .card1{
     width: 850px;
     height: 200px;
    position: relative;
-    background-color: #4CAF50;
+    background-color: #deb306;
     color: white;
     text-align: center;
     margin-top: 100px;
-    
+    background: linear-gradient(240deg,rgba(255, 192, 203, 0.177), #eaf34070,rgba(0, 0, 255, 0.067));
+    border-radius: 20px;
+    line-height: 20px;
+    padding: 50px;
+    font-size: 20px;
 
 }
 .box{
-    margin-top: -150px;
+    margin-top: 220px;
 
+}
+.hover-background-pink
+{
+    color: pink;
+}
+.slider2{
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+    border-top-left-radius: 60px;
+    border-end-end-radius: 60px;
+    background: linear-gradient(240deg,rgba(255, 192, 203, 0.177), #eaf34070,rgba(0, 0, 255, 0.067));
+    text-align: center;
+    font-size: 30px;
 }
